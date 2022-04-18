@@ -33,7 +33,7 @@
       "description": "Username of the group where bot users will go and disturb you",
       "required": true,
       "value": "DevilsHeavenMF"
-    }
+    }, 
     "OWNER_ID": {
       "description": "Telegram I'd of the owner of bot",
       "required": true,
