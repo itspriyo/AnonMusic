@@ -2,14 +2,14 @@
 <p>
 
 <p align="center">
-    <a href="https://github.com/AnonymousBoy1025/BabyGirlMusic/stargazers"><img src="https://img.shields.io/github/stars/AnonymousBoy1025/BabyGirlMusic?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
+    <a href="https://github.com/AnonymousR1025/BabyGirlMusic/stargazers"><img src="https://img.shields.io/github/stars/AnonymousR1025/BabyGirlMusic?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
 </p>
 <p align="center">
-    <a href="https://github.com/AnonymousBoy1025/BabyGirlMusic"> <img src="https://img.shields.io/github/repo-size/AnonymousBoy1025/BabyGirlMusic?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/AnonymousBoy1025/BabyGirlMusic/commits/AnonymousBoy1025"> <img src="https://img.shields.io/github/last-commit/AnonymousBoy1025/BabyGirlMusic?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/AnonymousBoy1025/BabyGirlMusic/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-red.svg?style=flat-square" /></a>
-    <a href="https://github.com/AnonymousBoy1025/BabyGirlMusic/issues"> <img src="https://img.shields.io/github/issues/AnonymousBoy1025/BabyGirlMusic?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/AnonymousBoy1025/BabyGirlMusic/network/members"> <img src="https://img.shields.io/github/forks/AnonymousBoy1025/BabyGirlMusic?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
+    <a href="https://github.com/AnonymousR1025/BabyGirlMusic"> <img src="https://img.shields.io/github/repo-size/AnonymousR1025/BabyGirlMusic?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/AnonymousR1025/BabyGirlMusic/commits/AnonymousR1025"> <img src="https://img.shields.io/github/last-commit/AnonymousR1025/BabyGirlMusic?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/AnonymousR1025/BabyGirlMusic/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-red.svg?style=flat-square" /></a>
+    <a href="https://github.com/AnonymousR1025/BabyGirlMusic/issues"> <img src="https://img.shields.io/github/issues/AnonymousR1025/BabyGirlMusic?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/AnonymousR1025/BabyGirlMusic/network/members"> <img src="https://img.shields.io/github/forks/AnonymousR1025/BabyGirlMusic?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
     <a href="https://pypi.org/project/Pyrogram/"> <img src="https://img.shields.io/pypi/v/pyrogram?color=yellow&label=pyrogram&logo=python&logoColor=green&style=for-the-badge" /></a>
 </p>
 
@@ -22,16 +22,16 @@ and <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
 
 <h2 align="center"> Features 🔥 </h2> 
 <ul>
-    <li>Playlist features</li>
+    <li>Supports Audio & Video Play</li>
     <li>Commands Cleaner</li>
-    <li>Multi Language</li>
+    <li>Fast & Smooth</li>
     <li>Maintained</li>
     <li>Less environment variables</li>
 </ul>
 
 <h2 align="center"> Requirements 📝 </h2>
 
-- FFmpeg
+- Pyrogram
 - NodeJS [nodesource.com](https://nodesource.com/)
 - Python 3.7 or higher
 - [PyTgCalls](https://github.com/pytgcalls/pytgcalls)
@@ -50,10 +50,10 @@ and <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
 - `/end` - stop music play
 
 <h2 align="center"> Deploy To Heroku </h2>
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/AnonymousBoy1025/BabyGirlMusic"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="200" height="35.45"/></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/AnonymousR1025/BabyGirlMusic"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="200" height="35.45"/></a></p>
 
 ### Special Credits 💖
-- [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](https://github.com/AnonymousBoy1025): Developer
+- [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](https://github.com/AnonymousR1025): Developer
 
 ### Support 🎑
 <a href="https://telegram.me/DevilsHeavenMF"><img src="https://img.shields.io/badge/-DevilsHeavenMF-blue.svg?style=for-the-badge&logo=Telegram"></a>
