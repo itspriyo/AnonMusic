@@ -40,7 +40,6 @@ and <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
 
 - `/play <song name>` - play song you requested
 - `/vplay <song name>` - play video song you requested
-- `volume <1-200>` - Set the volume level to given value
 - `/ping` - Bot Online or Offine
 
 <h4 align="center"> Admins Only 👷‍♂️ </h4>
