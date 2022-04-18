@@ -17,5 +17,5 @@ def is_admin(func):
         if is_admin:
             await func(client,message)
         else:
-            await message.reply("Only admins can execute this command !")
+            await message.reply("ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀɴ ᴀᴅᴍɪɴ ʙᴀʙʏ !")
     return oops
