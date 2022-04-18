@@ -65,7 +65,7 @@ START_BUTTONS = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton("🧐 ʜᴇʟᴘ​ 🧐", callback_data="cbcmds"),
-            InlineKeyboardButton("💔 ᴍᴀɪɴᴛᴀɪɴᴇʀ 💔", user_id={OWNER_ID}")
+            InlineKeyboardButton("💔 ᴍᴀɪɴᴛᴀɪɴᴇʀ 💔", url="tg://user?id={OWNER_ID}")
         ],
         [
             InlineKeyboardButton("💞 sᴜᴘᴘᴏʀᴛ 💞", url=f"https://t.me/{SUPPORT}"),
@@ -80,8 +80,8 @@ START_BUTTONS = InlineKeyboardMarkup(
 BUTTONS = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="💞 sᴜᴘᴘᴏʀᴛ 💞", url=f"https://t.me/{SUPPORT}"),
-            InlineKeyboardButton(text="🖤 ᴍᴀɪɴᴛᴀɪɴᴇʀ 🖤", user_id={OWNER_ID}")
+            InlineKeyboardButton(text="• sᴜᴘᴘᴏʀᴛ •", url=f"https://t.me/{SUPPORT}"),
+            InlineKeyboardButton(text="• ᴄʟᴏsᴇ •", callback_data="close_s")
         ]
     ]
 )
