@@ -36,7 +36,7 @@ client = Client(os.environ["SESSION_NAME"], int(os.environ["API_ID"]), os.enviro
 app = PyTgCalls(client)
 
 OWNER_ID = int(os.environ["OWNER_ID"])
-
+SUPPORT = os.environ["SUPPORT"]
 BOT_USERNAME = os.environ["BOT_USERNAME"]
 
 LIVE_CHATS = []
@@ -61,18 +61,18 @@ START_TEXT = """
 START_BUTTONS = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("✗ ᴡᴀɴɴᴀ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ​ ✗", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+            InlineKeyboardButton("🥺 ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ​ 🥺", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
         ],
         [
-            InlineKeyboardButton("✗ ʜᴇʟᴘ​ ✗", callback_data="cbcmds"),
-            InlineKeyboardButton("✗ ᴅᴇᴠᴇʟᴏᴘᴇʀ ✗", url="https://t.me/anonymous_was_bot")
+            InlineKeyboardButton("🧐 ʜᴇʟᴘ​ 🧐", callback_data="cbcmds"),
+            InlineKeyboardButton("💔 ᴍᴀɪɴᴛᴀɪɴᴇʀ 💔", url=f"tg://user?id={OWNER_ID}")
         ],
         [
-            InlineKeyboardButton("✗ sᴜᴘᴘᴏʀᴛ ✗", url="https://t.me/DevilsHeavenMF"),
-            InlineKeyboardButton("✗ ᴜᴘᴅᴀᴛᴇs ✗", url="https://t.me/DevilsHeavenMF")
+            InlineKeyboardButton("💞 sᴜᴘᴘᴏʀᴛ 💞", url=f"https://t.me/{SUPPORT}"),
+            InlineKeyboardButton("🤯 ᴄʜᴀɴɴᴇʟ 🤯", url=f"https://t.me/{SUPPORT}")
         ],
         [
-            InlineKeyboardButton("✗ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​ ✗", url="https://github.com/AnonymousBoy1025/BabyGirlMusic")
+            InlineKeyboardButton("🙄 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​ 🙄", url="https://github.com/AnonymousR1025/BabyGirlMusic")
         ]
     ]
 )
@@ -80,8 +80,8 @@ START_BUTTONS = InlineKeyboardMarkup(
 BUTTONS = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="✗ sᴜᴘᴘᴏʀᴛ ✗", url="https://t.me/DevilsHeavenMF"),
-            InlineKeyboardButton(text="✗ ᴅᴇᴠᴇʟᴏᴘᴇʀ ✗", url="https://t.me/anonymous_was_bot")
+            InlineKeyboardButton(text="✗ sᴜᴘᴘᴏʀᴛ ✗", url=f"https://t.me/{SUPPORT}"),
+            InlineKeyboardButton(text="✗ ᴅᴇᴠᴇʟᴏᴘᴇʀ ✗", url=f"tg://user?id={OWNER_ID}")
         ]
     ]
 )
@@ -233,7 +233,7 @@ async def join_chat(c: Client, m: Message):
         return await client.send_message(chat_id, "🙂ᴀssɪsᴛᴀɴᴛ ᴀʟʀᴇᴀᴅʏ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ᴄʜᴀᴛ ʙᴀʙʏ")
 
 
-@bot.on_message(filters.command("start") & filters.group)
+@bot.on_message(filters.command(["start", "ping"]) & filters.group)
 async def start_group(_, message):
     await message.reply_photo(photo="https://telegra.ph/file/22ae93512721d5186932e.jpg",
                               caption = f"ʜᴇʏ 😘 {message.from_user.mention},\n ᴍᴇ ɪᴢ ᴅᴇᴅ ʙᴀʙʏ​ 😴",
@@ -307,7 +307,7 @@ async def video_play(_, message):
         return await m.edit(str(e))
 
 
-@bot.on_message(filters.command("skip") & filters.group)
+@bot.on_message(filters.command(["skip", "next"]) & filters.group)
 @is_admin
 async def skip(_, message):
     await message.delete()
@@ -398,36 +398,6 @@ async def resume(_, message):
         try:
             await app.resume_stream(chat_id)
             await message.reply_text("» ᴛʀᴀᴄᴋ ʀᴇsᴜᴍᴇᴅ ʙʏ {} ʙᴀʙʏ🤗".format( message.from_user.mention ), )
-        except:
-            await message.reply_text("» ɴᴏᴛʜɪɴɢ ɪs ᴘʟᴀʏɪɴɢ ʙᴀʙʏ 🥱")
-    else:
-        await message.reply_text("» ɴᴏᴛʜɪɴɢ ɪs ᴘʟᴀʏɪɴɢ ʙᴀʙʏ 🥱")
-        
-        
-@bot.on_message(filters.command("mute") & filters.group)
-@is_admin
-async def mute(_, message):
-    await message.delete()
-    chat_id = message.chat.id
-    if chat_id in QUEUE:
-        try:
-            await app.mute_stream(chat_id)
-            await message.reply_text("🔇 Stream Muted by {} Baby.".format( message.from_user.mention ), )
-        except:
-            await message.reply_text("» ɴᴏᴛʜɪɴɢ ɪs ᴘʟᴀʏɪɴɢ ʙᴀʙʏ 🥱")
-    else:
-        await message.reply_text("» ɴᴏᴛʜɪɴɢ ɪs ᴘʟᴀʏɪɴɢ ʙᴀʙʏ 🥱")
-        
-        
-@bot.on_message(filters.command("unmute") & filters.group)
-@is_admin
-async def unmute(_, message):
-    await message.delete()
-    chat_id = message.chat.id
-    if chat_id in QUEUE:
-        try:
-            await app.unmute_stream(chat_id)
-            await message.reply_text("🔊 Stream unmuted by {} Baby.".format( message.from_user.mention ), )
         except:
             await message.reply_text("» ɴᴏᴛʜɪɴɢ ɪs ᴘʟᴀʏɪɴɢ ʙᴀʙʏ 🥱")
     else:
