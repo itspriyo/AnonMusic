@@ -411,7 +411,12 @@ async def restart(_, message):
         return
     await message.reply_text("🛠 <i>Restarting Music Player...</i>")
     os.system(f"kill -9 {os.getpid()} && python3 babygirl.py")
-            
+
+
+@bot.on_callback_query(filters.regex("close_s"))
+async def in_close_play(_, query: CallbackQuery):
+    await query.message.delete()
+
 
 app.start()
 bot.run()
