@@ -18,7 +18,7 @@ from pytgcalls.types import (
     MediumQualityVideo
 )
 from pytgcalls.types.stream import StreamAudioEnded, StreamVideoEnded
-from pyrogram import Client, filters
+from pyrogram import Client, filters, Message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.errors import UserAlreadyParticipant, UserNotParticipant
 from helpers.queues import QUEUE, add_to_queue, get_queue, clear_queue, pop_an_item
