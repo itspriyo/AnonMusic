@@ -248,9 +248,8 @@ async def start_private(_, message):
 @bot.on_message(filters.command(["ping", "alive"]) & filters.group)
 async def start_group(_, message):
     await message.delete()
-    anon = https://telegra.ph/file/d6ff45f5be2b42fcc2ffb.jpg
     fuk = "<b>ᴩᴏɴɢ ʙᴀʙʏ !</b>"
-    await message.reply_photo(anon, caption=fuk)
+    await message.reply_photo(photo="https://telegra.ph/file/d6ff45f5be2b42fcc2ffb.jpg", caption=fuk)
 
 
 @bot.on_message(filters.command(["join", "userbotjoin", "assistant", "ass"]) & filters.group)
