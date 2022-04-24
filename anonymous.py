@@ -479,10 +479,11 @@ async def resume(_, message):
 
 
 @bot.on_callback_query(filters.regex("help_cb"))
-async def cbcmds(_, query: CallbackQuery):
+async def help_cmds(_, query: CallbackQuery):
     await query.answer("Commands Menu")
     await query.edit_message_text(
-        f"""**» ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ «**
+        f"""<b>» ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ «</b>
+
 » /play (sᴏɴɢ/ʏᴛ ʟɪɴᴋ) : ᴩʟᴀʏ's ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ sᴏɴɢ ᴀs ᴀᴜᴅɪᴏ.
 » /vplay (sᴏɴɢ/ʏᴛ ʟɪɴᴋ) : ᴩʟᴀʏ's ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ sᴏɴɢ ᴀs ᴠɪᴅᴇᴏ.
 » /pause : ᴩᴀᴜsᴇ ᴛʜᴇ ᴏɴɢᴏɪɴɢ sᴛʀᴇᴀᴍ.
