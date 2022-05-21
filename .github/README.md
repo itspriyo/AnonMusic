@@ -56,6 +56,12 @@ and <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
 <h2 align="center"> Deploy To Heroku </h2>
 <p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/AnonymousR1025/AnonMusic"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="200" height="35.45"/></a></p>
 
+<h2 align="center"> ᴅᴇᴩʟᴏʏ ᴏɴ ᴏᴋᴛᴇᴛᴏ </h2>
+
+<p align="center"><a href="https://cloud.okteto.com/deploy?repository=https://github.com/AnonymousR1025/AnonMusic"><img src="https://img.shields.io/badge/Deploy%20To%20Okteto-informational?style=for-the-badge&logo=Okteto" width="200" height="35.45"/></a></p>
+The second easiest way to host this bot, Deploy on Okteto Cloud
+
+
 ### Special Credits 💖
 - [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](https://github.com/AnonymousR1025) for [Nothing](https://github.com/AnonymousR1025/AnonMusic)
 - [Dan](https://github.com/delivrance) for [Pyrogram](https://github.com/pyrogram/pyrogram) 💕
