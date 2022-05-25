@@ -40,31 +40,50 @@ SUPPORT = os.environ["SUPPORT"]
 
 LIVE_CHATS = []
 
-START_TEXT = """━━━━━━━━━━━━━━━━━━━━━━
-[🖤](https://telegra.ph/file/d6ff45f5be2b42fcc2ffb.jpg) ʜᴇʏ, <b>{}</b> 
+START_TEXT = """<b>ʜᴇʏ {},</b> 🖤
+   🥀 <b>ᴛʜɪs ɪs ᴀɴᴏɴ ᴍᴜsɪᴄ ʙᴏᴛ.</b>
 
-ᴀ ғᴀsᴛ & sᴍᴏᴏᴛʜ ᴠᴄ ᴩʟᴀʏᴇʀ ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩs.
+<b>ᴀ ғᴀsᴛ & ᴩᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ ᴩʟᴀʏᴇʀ ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ's ᴠɪᴅᴇᴏᴄʜᴀᴛs.</b>
 
-┏━━━━━━━━━━━━━━━━━┓
-┣★ ᴍᴀᴅᴇ ʙʏ​ : [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](tg://user?id={})
-┗━━━━━━━━━━━━━━━━━┛
-
-ᴄʟɪᴄᴋ ᴏɴ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴋɴᴏᴡ ᴀʟʟ ᴏғ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs.
-━━━━━━━━━━━━━━━━━━━━━━
+<b>ᴀʟʟ ᴏғ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴀʀᴇ ʟɪsᴛᴇᴅ ɪɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ.</b>
 """
+
+HELP_TEXT = """<b>» ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ «</b>
+
+» /play (sᴏɴɢ/ʏᴛ ʟɪɴᴋ) : ᴩʟᴀʏ's ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ sᴏɴɢ ᴀs ᴀᴜᴅɪᴏ.
+» /vplay (sᴏɴɢ/ʏᴛ ʟɪɴᴋ) : ᴩʟᴀʏ's ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ sᴏɴɢ ᴀs ᴠɪᴅᴇᴏ.
+» /pause : ᴩᴀᴜsᴇ ᴛʜᴇ ᴏɴɢᴏɪɴɢ sᴛʀᴇᴀᴍ.
+» /resume : ʀᴇsᴜᴍᴇ ᴛʜᴇ ᴩᴀᴜsᴇᴅ sᴛʀᴇᴀᴍ.
+» /skip : sᴋɪᴩ ᴛᴏ ᴛʜᴇ ɴᴇxᴛ ᴛʀᴀᴄᴋ ɪɴ ǫᴜᴇᴜᴇ.
+» /end : ᴄʟᴇᴀʀs ᴛʜᴇ ǫᴜᴇᴜᴇ ᴀɴᴅ ʟᴇᴀᴠᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ.
+» /playlist : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ǫᴜᴇᴜᴇᴅ ᴛʀᴀᴄᴋs.
+» /join or /userbotjoin : ʀᴇǫᴜᴇsᴛs ᴛʜᴇ ᴀssɪsᴛᴀɴᴛ ᴛᴏ ᴊᴏɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ.
+» /restart : ʀᴇsᴛᴀʀᴛs ᴛʜᴇ ʙᴏᴛ.
+
+🥵 <b><u>ᴍᴀᴅᴇ ʙʏ 𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦</u></b> 🥵"""
+
+START_IMG = "https://telegra.ph/file/36be820a8775f0bfc773e.jpg"
 
 START_BUTTONS = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                        "🥺 ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ​ 🥺", url="https://t.me/DeviLal_Robot?startgroup=true")
+                        "🥺 ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ​ 🥺", url="https://t.me/fallen_music_bot?startgroup=true")
         ],
-        [
-            InlineKeyboardButton("🧐 ʜᴇʟᴩ 🧐", callback_data=" help_cb"),
+        [   
+            InlineKeyboardButton("🥀 ᴍᴀɪɴᴛᴀɪɴᴇʀ 🥀", user_id=1356469075),
             InlineKeyboardButton("💔 sᴜᴩᴩᴏʀᴛ​ 💔", url=f"https://t.me/{SUPPORT}")
         ],
         [
-            InlineKeyboardButton("🙄 sᴏᴜʀᴄᴇ 🙄", url="https://telegra.ph/file/b2a4f66615d038f77bb46.mp4")
+            InlineKeyboardButton("🙄 sᴏᴜʀᴄᴇ 🙄", url="https://github.com/AnonymousR1025/AnonMusic")
+        ]
+    ]
+)
+
+HELP_BUTTON = InlineKeyboardMarkup(
+    [
+        [
+            InlineKeyboardButton("↻ ᴄʟᴏsᴇ​ ↻", callback_data="close")
         ]
     ]
 )
@@ -78,7 +97,7 @@ BUTTONS = InlineKeyboardMarkup(
             InlineKeyboardButton("▢", callback_data="end"),
         ],
         [
-            InlineKeyboardButton("• ᴄʟᴏsᴇ​ •", callback_data="close")
+            InlineKeyboardButton("↻ ᴄʟᴏsᴇ​ ↻", callback_data="close")
         ]
     ]
 )
@@ -236,14 +255,20 @@ async def callbacks(_, cq: CallbackQuery):
             await cq.answer("» ǫᴜᴇᴜᴇ ᴇᴍᴘᴛʏ, ᴄʟᴏsᴇᴅ sᴛʀᴇᴀᴍɪɴɢ.")
         else:
             await cq.answer("» ᴛʀᴀᴄᴋ sᴋɪᴘᴘᴇᴅ ʙᴀʙʏ.")
-            
+
 
 @bot.on_message(filters.command("start") & filters.private)
 async def start_private(_, message):
-    msg = START_TEXT.format(message.from_user.mention, OWNER_ID)
-    await message.reply_text(text = msg,
+    msg = START_TEXT.format(message.from_user.mention)
+    await message.reply_photo(photo = START_IMG,
+                              caption = msg,
                              reply_markup = START_BUTTONS)
     
+@bot.on_message(filters.command(["help", "cmd", "cmds", "commands"]) & filters.private)
+async def help_cmd(_, message):
+    await message.reply_photo(photo = START_IMG,
+                              caption = HELP_TEXT,
+                             reply_markup = HELP_BUTTON)
 
 @bot.on_message(filters.command(["ping", "alive"]) & filters.group)
 async def start_group(_, message):
@@ -476,25 +501,6 @@ async def resume(_, message):
             await message.reply_text("» ɴᴏᴛʜɪɴɢ ɪs ᴩʟᴀʏɪɴɢ.")
     else:
         await message.reply_text("» ɴᴏᴛʜɪɴɢ ɪs ᴩʟᴀʏɪɴɢ.")
-
-
-@bot.on_callback_query(filters.regex("help_cb"))
-async def help_cmds(_, query: CallbackQuery):
-    await query.answer("Commands Menu")
-    await query.edit_message_text(
-        f"""<b>» ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ «</b>
-
-» /play (sᴏɴɢ/ʏᴛ ʟɪɴᴋ) : ᴩʟᴀʏ's ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ sᴏɴɢ ᴀs ᴀᴜᴅɪᴏ.
-» /vplay (sᴏɴɢ/ʏᴛ ʟɪɴᴋ) : ᴩʟᴀʏ's ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ sᴏɴɢ ᴀs ᴠɪᴅᴇᴏ.
-» /pause : ᴩᴀᴜsᴇ ᴛʜᴇ ᴏɴɢᴏɪɴɢ sᴛʀᴇᴀᴍ.
-» /resume : ʀᴇsᴜᴍᴇ ᴛʜᴇ ᴩᴀᴜsᴇᴅ sᴛʀᴇᴀᴍ.
-» /skip : sᴋɪᴩ ᴛᴏ ᴛʜᴇ ɴᴇxᴛ ᴛʀᴀᴄᴋ ɪɴ ǫᴜᴇᴜᴇ.
-» /end : ᴄʟᴇᴀʀs ᴛʜᴇ ǫᴜᴇᴜᴇ ᴀɴᴅ ʟᴇᴀᴠᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ.
-» /playlist : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ǫᴜᴇᴜᴇᴅ ᴛʀᴀᴄᴋs.
-» /join or /userbotjoin - ʀᴇǫᴜᴇsᴛs ᴛʜᴇ ᴀssɪsᴛᴀɴᴛ ᴛᴏ ᴊᴏɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ.
-» /restart - ʀᴇsᴛᴀʀᴛs ᴛʜᴇ ʙᴏᴛ.
-
-🥵 <b><u>ᴍᴀᴅᴇ ʙʏ 𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦</u></b> 🥵""")
 
 
 @bot.on_message(filters.command("restart"))
