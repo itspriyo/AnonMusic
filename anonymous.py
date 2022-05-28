@@ -41,7 +41,7 @@ SUPPORT = os.environ["SUPPORT"]
 LIVE_CHATS = []
 
 START_TEXT = """<b>ʜᴇʏ {},</b> 🖤
-   🥀 <b>ᴛʜɪs ɪs ᴀɴᴏɴ ᴍᴜsɪᴄ ʙᴏᴛ.</b>
+   🥀 <b>ᴛʜɪs ɪs ᴘʀɪʏᴏ ᴍᴜsɪᴄ ʙᴏᴛ.</b>
 
 <b>ᴀ ғᴀsᴛ & ᴩᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ ᴩʟᴀʏᴇʀ ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ's ᴠɪᴅᴇᴏᴄʜᴀᴛs.</b>
 
@@ -60,22 +60,22 @@ HELP_TEXT = """<b>» ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ «</b>
 » /join or /userbotjoin : ʀᴇǫᴜᴇsᴛs ᴛʜᴇ ᴀssɪsᴛᴀɴᴛ ᴛᴏ ᴊᴏɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ.
 » /restart : ʀᴇsᴛᴀʀᴛs ᴛʜᴇ ʙᴏᴛ.
 
-🥵 <b><u>ᴍᴀᴅᴇ ʙʏ 𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦</u></b> 🥵"""
+🥵 <b><u>ᴍᴀᴅᴇ ʙʏ ᑭᖇᎥƳᗝ</u></b> 🥵"""
 
-START_IMG = "https://telegra.ph/file/36be820a8775f0bfc773e.jpg"
+START_IMG = "https://telegra.ph/file/16a91350a3c12e914e14c.jpg"
 
 START_BUTTONS = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                        "🥺 ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ​ 🥺", url="https://t.me/fallen_music_bot?startgroup=true")
+                        "🥺 ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ​ 🥺", url="https://t.me/bcs_musicbot?startgroup=true")
         ],
         [   
-            InlineKeyboardButton("🥀 ᴍᴀɪɴᴛᴀɪɴᴇʀ 🥀", user_id=1356469075),
+            InlineKeyboardButton("🥀 ᴍᴀɪɴᴛᴀɪɴᴇʀ 🥀", user_id=2007865157),
             InlineKeyboardButton("💔 sᴜᴩᴩᴏʀᴛ​ 💔", url=f"https://t.me/{SUPPORT}")
         ],
         [
-            InlineKeyboardButton("🙄 sᴏᴜʀᴄᴇ 🙄", url="https://github.com/AnonymousR1025/AnonMusic")
+            InlineKeyboardButton("🙄 sᴏᴜʀᴄᴇ 🙄", url="https://github.com/itspriyo")
         ]
     ]
 )
@@ -274,7 +274,7 @@ async def help_cmd(_, message):
 async def start_group(_, message):
     await message.delete()
     fuk = "<b>ᴩᴏɴɢ ʙᴀʙʏ !</b>"
-    await message.reply_photo(photo="https://telegra.ph/file/d6ff45f5be2b42fcc2ffb.jpg", caption=fuk)
+    await message.reply_photo(photo="https://telegra.ph/file/16a91350a3c12e914e14c.jpg", caption=fuk)
 
 
 @bot.on_message(filters.command(["join", "userbotjoin", "assistant", "ass"]) & filters.group)
